@@ -227,6 +227,43 @@ MonoBehaviour:
   speed: 5
   limit: 19
   limity: 8.5
+--- !u!58 &760517137
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 760517132}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0048834085, y: 0.10743213}
+  serializedVersion: 2
+  m_Radius: 0.7493564
+--- !u!1 &1216895937 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4256159286739264584, guid: c37e6185dc29e4331a86aa82f7fc8a2c, type: 3}
+  m_PrefabInstance: {fileID: 1542979038}
+  m_PrefabAsset: {fileID: 0}
+--- !u!58 &1216895938
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1216895937}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -1.3006899, y: 0}
+  serializedVersion: 2
+  m_Radius: 2.0993106
 --- !u!1001 &1542979038
 PrefabInstance:
   m_ObjectHideFlags: 0
