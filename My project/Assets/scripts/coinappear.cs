@@ -11,6 +11,7 @@ public class coinappear : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+         // create a code that will make a coin appear on a random position when the game starts
        
             DropCoin();
         
@@ -26,7 +27,7 @@ public class coinappear : MonoBehaviour
     }
 
 
-     public void StopSpawning(){
+    // public void StopSpawning(){
        // create a function to stop the game when the player gets 10 points
-     }
+     //}
 }

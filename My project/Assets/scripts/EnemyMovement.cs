@@ -7,6 +7,7 @@ public class EnemyMovement : MonoBehaviour
     [SerializeField]float speed;
     [SerializeField]float limit;
     Vector3 move;
+    
 
    
 
