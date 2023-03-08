@@ -9,7 +9,6 @@ public class scoree : MonoBehaviour
     [SerializeField] TMP_Text tmpObj;
     [SerializeField] int maxScores;
     //[SerializeField] coinappear creator;
-
     int scores;
     // Start is called before the first frame update
     void Start()
@@ -33,7 +32,7 @@ public class scoree : MonoBehaviour
     void Finish()
     {
 
-        //creator.StopSpawning();
+        Time.timeScale = 0f;
         tmpObj.text += "\n\n YOU WON!!!";
 
 }
