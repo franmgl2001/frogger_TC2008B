@@ -1,4 +1,3 @@
-using System.Collections;
 //Move the basket horizontally using the arrow keys or AD to catch the falling balls
 
 //Rafael Blanga Hanono 2023-03-01
