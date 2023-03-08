@@ -12,7 +12,7 @@ public class Score : MonoBehaviour
 
     [SerializeField] TMP_Text tmpObj;
     [SerializeField] int maxScore;
-    [SerializeField] createballs creator;
+    //[SerializeField] createballs creator;
     int score;
     // Start is called before the first frame update
     void Start()
@@ -37,7 +37,7 @@ public class Score : MonoBehaviour
     void Finish()
     {
         
-        creator.StopSpawning();
+        //creator.StopSpawning();
         tmpObj.text += "\n\n YOU WON!!!";
 }
 }

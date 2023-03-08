@@ -338,6 +338,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rafa: {fileID: 1404540260}
+  scoreOb: {fileID: 1404540262}
 --- !u!1001 &1018285390
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -413,6 +414,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1404540261}
   - component: {fileID: 1404540260}
+  - component: {fileID: 1404540262}
   m_Layer: 0
   m_Name: gamemanager
   m_TagString: Untagged
@@ -441,14 +443,28 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1404540259}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -17.6971, y: -7.5225, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -17.697113, y: -7.522522, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1404540262
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1404540259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c5705216a0874a6ba599f50caf5b9ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tmpObj: {fileID: 1763853346}
+  maxScores: 10
 --- !u!1 &1763853344
 GameObject:
   m_ObjectHideFlags: 0
@@ -484,8 +500,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -38}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 118.86902, y: -38}
+  m_SizeDelta: {x: 437.738, y: 153.8661}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1763853346
 MonoBehaviour:

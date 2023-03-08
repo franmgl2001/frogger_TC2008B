@@ -7,11 +7,16 @@ public class coinappear : MonoBehaviour
 {
     [SerializeField] GameObject coin;
     [SerializeField] float delay;
+    //bool rally = true;
     // Start is called before the first frame update
     void Start()
     {
+       // while (rally == true)
+       // {
+            DropCoin();
+       // }
         //repeat when a player touches the coin, the coin will disappear and the player will get 1 point, anda coin will appear on a random position
-        DropCoin();
+        
 
     }
 
@@ -22,5 +27,7 @@ public class coinappear : MonoBehaviour
     }
 
 
-    
+     //public void StopSpawning(){
+     //rally = false;
+   // }
 }
