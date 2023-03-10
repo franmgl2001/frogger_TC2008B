@@ -12,23 +12,30 @@ public class coinappear : MonoBehaviour
     [SerializeField] GameObject coin;
     [SerializeField] float delay;
     //bool rally = true;
+    int frame = 0;
     // Start is called before the first frame update
     void Start()
     {
          // create a code that will make a coin appear on a random position when the game starts
        
-            DropCoin();
+            //DropCoin();
         
         //repeat when a player touches the coin, the coin will disappear and the player will get 1 point, anda coin will appear on a random position
         
 
     }
 
+/*
     public void DropCoin(){
        var position = new Vector3(Random.Range(-9.0f, 9.0f), Random.Range(-9.0f, 9.0f), Random.Range(-9.0f, 9.0f));
        GameObject obj =  Instantiate(coin,position,Quaternion.identity);
        //Destroy(obj, 6.0f);
-    }
+    }*/
+
+    if (col.gameObject.tag == "mino"){
+        Destroy(this.gameObject);
+        scoreOb.AddPoints(1);
+        }
 
 
     // public void StopSpawning(){

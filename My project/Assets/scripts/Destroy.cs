@@ -11,7 +11,7 @@ public class Destroy : MonoBehaviour
     [SerializeField] coinappear apearer;
     [SerializeField] scoree scoreOb;
     // Start is called before the first frame update
-    
+    /*
     void OnCollisionEnter2D(Collision2D col)
     {
         if (col.gameObject.tag == "coin"){
@@ -20,6 +20,6 @@ public class Destroy : MonoBehaviour
         scoreOb.AddPoints(1);
         }
         
-    }
+    }*/
 
 }
