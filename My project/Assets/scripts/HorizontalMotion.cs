@@ -1,6 +1,6 @@
 //Move the basket horizontally using the arrow keys or AD to catch the falling balls
 
-//Rafael Blanga Hanono 2023-03-01
+//Rafael Blanga Hanono and Francisco Martinez Gallardo 2023-03-01
 
 using System.Collections;
 using System.Collections.Generic;

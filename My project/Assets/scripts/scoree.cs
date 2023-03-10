@@ -19,6 +19,7 @@ public class scoree : MonoBehaviour
     
     public void AddPoints(int amount)
     {
+        //Change the score on colision with coin
         scores += amount;
         tmpObj.text = "Score: " + scores;
         Debug.Log("New score: " + scores);
