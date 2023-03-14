@@ -22,28 +22,30 @@ public class EnemyMovement : MonoBehaviour
     {
         final_speed = speed + (scoreOb.score * 2); // increase the speed of the enemy when the player gets more points
 
-        // Move the enemy in the x-axis
-        transform.Translate(Vector2.right * final_speed * Time.deltaTime);
+        
+        transform.Translate(Vector2.right * final_speed * Time.deltaTime); // move the enemy in the horizontally
 
         // Rotate the enemy when it reaches the limit and move in - speed to the opposite direction until it reaches the limit again
         if (transform.position.x > limit || transform.position.x < -limit)
         {
             
             speed = -speed; // change the direction of the enemy
-            Vector3 rotationToAdd = new Vector3(0, 90, 0); // rotate the enemy
+            Vector3 rotationToAdd = new Vector3(0, 90, 0); // rotation of the sprite of the enemy
             transform.Rotate(rotationToAdd); // rotate the enemy
 
-            transform.Translate(Vector2.right * speed * Time.deltaTime*10);
+            transform.Translate(Vector2.right * speed * Time.deltaTime*20); // move the enemy so it doesn't get stuck in the limit
         }
 
-        // Rotate the enemy when it reaches the limit and move in - speed to the opposite direction until it reaches the limit again
+
 
     }
+    
     private void OnCollisionEnter2D(Collision2D col)
     {
         if (col.gameObject.tag == "Player")
         {
-            scoreOb.AddPoints(-3);
+
+            scoreOb.AddPoints(-2);// remove 2 points to the score when the player touches the enemy
         }
     }
     
