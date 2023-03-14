@@ -9,12 +9,10 @@ By: Francisco Martinez Gallardo and Rafael Blanga
 
 public class EnemyMovement : MonoBehaviour
 {
-    
-    // create code to rotate the enemy when it reaches the limit
+    // Variables Declaration
     [SerializeField]float limit;
     [SerializeField] ScoreCount scoreOb;
     [SerializeField] float speed;
-    Vector3 move;
     float final_speed;
 
    
