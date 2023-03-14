@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-/* create a code that will make a coin appear on a random position when the game starts, 
+/* Create a code that will make a coin appear on a random position when the game starts, 
 if its touched by the player, the coin will disappear and the player will get 1 point. 
 Finally a new coin will appear on a random position on the top or bottom of the screen.
 By: Francisco Martinez Gallardo and Rafael Blanga

@@ -2,6 +2,7 @@ using UnityEngine;
 
 /*
 This script will make the enemy move in the x-axis and rotate when it reaches the limit
+when colision with the player, the player will lose 2 points
 By: Francisco Martinez Gallardo and Rafael Blanga
 
 */
@@ -39,7 +40,7 @@ public class EnemyMovement : MonoBehaviour
 
 
     }
-    
+
     private void OnCollisionEnter2D(Collision2D col)
     {
         if (col.gameObject.tag == "Player")
