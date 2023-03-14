@@ -24,7 +24,6 @@ public class ScoreCount : MonoBehaviour
         //Change the score on colision with coin
         score += amount;
         scoreText.text = "Score: " + score;
-        Debug.Log("New score: " + score);
     }
     
 
