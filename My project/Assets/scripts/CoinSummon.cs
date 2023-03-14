@@ -11,7 +11,6 @@ public class CoinSummon : MonoBehaviour
 {
     [SerializeField] GameObject coin;
     [SerializeField] ScoreCount scoreOb;
-    int cont = 0; // create a variable to count the number of times the coin collision is detected
 
    // create a function to make the coin appear on a random position between -19.5 and 19.5 on the x-axis
     public void DropCoin(float y1, float y2){
@@ -23,15 +22,15 @@ public class CoinSummon : MonoBehaviour
       
       if (col.gameObject.tag == "Player")
       scoreOb.AddPoints(1);
-      if (cont % 2 != 0){
+      if (scoreOb.score % 2 != 0){
          DropCoin(-7, -9);
-         cont += 1;
+
       }
       else{
          DropCoin(7, 9);
-         cont += 1;
+
       }
-      Debug.log(cont);
+
       Destroy(this.gameObject);
    }
 }

@@ -14,7 +14,6 @@ public class EnemyMovement : MonoBehaviour
     [SerializeField] ScoreCount scoreOb;
     [SerializeField] float speed;
     Vector3 move;
-    int count = 0;
     float final_speed;
 
    
